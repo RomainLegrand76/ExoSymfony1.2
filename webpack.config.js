@@ -9,10 +9,14 @@ Encore
     .setPublicPath('/build')
 
     // will create public/build/app.js and public/build/app.css
-    .addEntry('app', './assets/js/app.js')
+    .addEntry('app', ['./assets/js/app.js', './assets/css/style.css', './assets/css/bootstrap.css'])
 
     // allow legacy applications to use $/jQuery as a global variable
     .autoProvidejQuery()
+
+    .enableSassLoader(function (sassOptions){}, {
+        resolveUrlLoader : false
+    })
 
     // enable source maps during development
     .enableSourceMaps(!Encore.isProduction())
@@ -22,6 +26,8 @@ Encore
 
     // show OS notifications when builds finish/fail
     .enableBuildNotifications()
+
+
 
 // create hashed filenames (e.g. app.abc123.css)
 // .enableVersioning()

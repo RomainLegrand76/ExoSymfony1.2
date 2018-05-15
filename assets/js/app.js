@@ -1,5 +1,2 @@
-require('../css/bootstrap.css');
-require('../css/style.css');
-require('jquery.js');
-require('popper.js');
-require('bootstrap.js');
+require('../../node_modules/bootstrap-sass/assets/javascripts/bootstrap');
+require('../../node_modules/popper.js');
