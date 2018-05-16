@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}<link rel="stylesheet" href="{{ asset("build/app.css") }}">{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}<link rel="stylesheet" href="{{ asset("build/app.css") }}">{% endblock %}
 
-    </head>
+</head>
+<div id="corp" class="container-fluid">
+    <header class="row">
+        <div class="offset-lg-1 col-lg-2">
+            <h1 id="titre">Easy Wedding</h1>
+        </div>
+        <nav class="offset-lg-4 col-lg-4">
+            <!--<h1>Connexion</h1><input type="text" name="name"><input type="password" name="mdp"><input type="submit" name="submit">-->
+            <ul>
+                <li><img src="images/icone/inscription.png"> Inscription</li>
+                <li><img src="images/icone/formules.png"> Formules</li>
+                <li><img src="images/icone/entreprise.png">  Entreprises</li>
+                <li><img src="images/icone/photos.png">  Photos</li>
+            </ul>
+        </nav>
+    </header>
+    <div id="ornement">
+        <img src="images/ornement1.png">
+        <img src="images/ornement2.png" id="ornement2">
+    </div>
+
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}<script type="text/javascript" src="{{ asset("build/app.js") }}"/>{% endblock %}
+    {% block body %}{% endblock %}
+    {% block javascripts %}<script type="text/javascript" src="{{ asset("build/app.js") }}"/>{% endblock %}
     </body>
+
+    <footer class="row">
+        <div class="offset-lg-9 col-lg-3">
+            <ul>
+                <li><img src="images/icone/iconbook.png"> Contactez-nous</li>
+                <li><img src="images/icone/icontel.png"> Mention-legal</li>
+            </ul>
+        </div>
+    </footer>
+</div>
 </html>
+
