@@ -7,8 +7,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -19,7 +19,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -71,7 +71,7 @@ nav ul{
 
 
 nav ul li:hover{
-	background-color: rgb(214,214,214); 
+	background-color: rgb(214,214,214);
 }
 
 footer{
@@ -92,10 +92,10 @@ footer ul{
 	font-size: 45px;
 }
 
-  .carousel-inner img {
-      width: 100%;
-      height: 100%;
-  }
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+}
 #demo{
 	width: 75%;
 	margin: auto;
@@ -107,10 +107,11 @@ footer ul{
 	border: solid 2px black;
 	margin: 10px;
 	box-shadow: 0px 8px 8px 8px #aaa;
+	margin-bottom: 50px;
 }
 
 #ornement2{
-	margin-left: 1550px;
+	margin-left: 1800px;
 }
 
 #ornement{
