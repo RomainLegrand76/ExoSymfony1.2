@@ -77,6 +77,8 @@ nav ul li:hover{
 footer{
     background-color: pink;
     height: 50px;
+
+    padding-top: 20px;
 }
 
 footer ul{
@@ -107,6 +109,7 @@ footer ul{
     border: solid 2px black;
     margin: 10px;
     box-shadow: 0px 8px 8px 8px #aaa;
+    margin-bottom: 25px;
 }
 
 #ornement2{
