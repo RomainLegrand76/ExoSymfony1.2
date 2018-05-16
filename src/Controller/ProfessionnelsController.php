@@ -25,7 +25,7 @@ class ProfessionnelsController extends Controller
     /**
      * @Route("/professionnels/formulaire", name="professionnels_formulaire")
      */
-    public function formulaire(Request $request){
+    public function formulaire(Request $requete){
         $professionnel = new Professionnels();
         $professionnel->setName('Toto Company');
         $professionnel->setCategorie('Comique');
@@ -37,8 +37,25 @@ class ProfessionnelsController extends Controller
             ->add('siret', NumberType::class)
             ->add('envoyer', SubmitType::class, array('label'=>'Inscrire professionnel'))
             ->getForm();
+
+        $formulaire->handleRequest($requete);
+
+        if($formulaire->isSubmitted() && $formulaire->isValid()){
+            $professionnel = $formulaire->getData();
+
+            return $this->redirectToRoute('professionnels_formok');
+        }
+
         return $this->render('professionnels/index.html.twig',
             array('formulaire' => $formulaire->createView()));
+    }
+
+    /**
+     * @Route("/professionnels/formok", name="professionnels_formok")
+     */
+
+    public function formulaireOK(){
+        return $this->render('professionnels/formok.html.twig');
     }
 
 }
