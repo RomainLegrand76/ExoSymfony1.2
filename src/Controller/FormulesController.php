@@ -8,7 +8,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class FormulesController extends Controller
 {
     /**
-     * @Route("/formules", name="formules")
+     * @Route("/formules", name="
+     * ")
      */
     public function index()
     {
