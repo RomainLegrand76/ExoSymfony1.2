@@ -117,3 +117,8 @@ footer ul{
     display: block;
     position: absolute;
 }
+
+#iframe{
+    display: flex;
+    justify-content: center;
+}
