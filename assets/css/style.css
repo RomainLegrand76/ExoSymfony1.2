@@ -100,13 +100,13 @@ footer ul{
     width: 75%;
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .article{
     border: solid 2px black;
     margin: 10px;
     box-shadow: 0px 8px 8px 8px #aaa;
-    margin-bottom: 50px;
 }
 
 #ornement2{
