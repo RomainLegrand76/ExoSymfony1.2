@@ -5,51 +5,52 @@
 {% block body %}
 
 
-    <main>
-
-        <div id="demo" class="carousel slide" data-ride="carousel">
-            <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-            </ul>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/carouselle/img1.jpg" alt="Mariage" width="1100" height="500">
-                    <div class="carousel-caption">
-                        <h3>Mariage</h3>
+        <main class="col-lg-9">
+            <div id="carousel">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/carouselle/img1.jpg" alt="Mariage" width="1100" height="500">
+                            <div class="carousel-caption">
+                                <h3>Mariage</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/carouselle/img2.jpg" alt="Mariage" width="1100" height="500">
+                            <div class="carousel-caption">
+                                <h3>Mariage</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/carouselle/img3.jpg" alt="Mariage" width="1100" height="500">
+                            <div class="carousel-caption">
+                                <h3>Mariage</h3>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/carouselle/img2.jpg" alt="Mariage" width="1100" height="500">
-                    <div class="carousel-caption">
-                        <h3>Mariage</h3>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/carouselle/img3.jpg" alt="Mariage" width="1100" height="500">
-                    <div class="carousel-caption">
-                        <h3>Mariage</h3>
-                    </div>
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-        <div class="row">
-            <article class="offset-lg-1 col-lg-5 article">
-                <h1>article1 :</h1>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum delectus quidem nobis, impedit soluta mollitia dignissimos error itaque tempora. Aspernatur sed blanditiis libero culpa quos, nisi atque esse nihil Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga maiores pariatur alias vitae tenetur nemo quis inventore, minima magnam, deserunt odit nam! Nulla magnam pariatur obcaecati, qui quam, impedit sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure animi aliquam cupiditate delectus natus amet. Incidunt repudiandae deserunt, illum quaerat ipsum rem odio commodi cupiditate deleniti ea expedita consectetur, natus.
-            </article>
-            <article class="col-lg-5 article">
-                <h1>article2 :</h1>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum delectus quidem nobis, impedit soluta mollitia dignissimos error itaque tempora. Aspernatur sed blanditiis libero culpa quos, nisi atque esse nihil Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga maiores pariatur alias vitae tenetur nemo quis inventore, minima magnam, deserunt odit nam! Nulla magnam pariatur obcaecati, qui quam, impeditlorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis fugit doloribus sunt sapiente, corrupti numquam, earum molestiae iure maxime in nostrum sit facilis nemo. Magnam quam voluptate consequatur inventore numquam?
-            </article>
-        </div>
-    </main>
+            <div id="article" class="row">
+                <article id="article1" class="offset-lg-1 col-lg-4">
+                    <h1 class="titrearticle">article1 :</h1>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum delectus quidem nobis, impedit soluta mollitia dignissimos error itaque tempora. Aspernatur sed blanditiis libero culpa quos, nisi atque esse nihil Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga maiores pariatur alias vitae tenetur nemo quis inventore, minima magnam, deserunt odit nam! Nulla magnam pariatur obcaecati, qui quam, impedit sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure animi aliquam cupiditate delectus natus amet. Incidunt repudiandae deserunt, illum quaerat ipsum rem odio commodi cupiditate deleniti ea expedita consectetur, natus.
+                </article>
+                <article id="article2" class="offset-lg-1 col-lg-4">
+                    <h1 class="titrearticle">article2 :</h1>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum delectus quidem nobis, impedit soluta mollitia dignissimos error itaque tempora. Aspernatur sed blanditiis libero culpa quos, nisi atque esse nihil Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga maiores pariatur alias vitae tenetur nemo quis inventore, minima magnam, deserunt odit nam! Nulla magnam pariatur obcaecati, qui quam, impeditlorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis fugit doloribus sunt sapiente, corrupti numquam, earum molestiae iure maxime in nostrum sit facilis nemo. Magnam quam voluptate consequatur inventore numquam?</span>
+                </article>
+            </div>
+        </main>
 
 {% endblock %}

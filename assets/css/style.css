@@ -44,13 +44,12 @@ table {
 /*--------------------------------------CSS RESET---------------------------*/
 
 
+
 main{
-    border: solid 1px black;
-    margin: 100px;
-    margin-left: 200px;
-    margin-right: 200px;
-    background-color: rgb(240,240,240);
-    box-shadow: 0px 8px 8px 8px #aaa;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 header{
@@ -76,7 +75,6 @@ nav ul li:hover{
 footer{
     background-color: pink;
     height: 50px;
-    padding-top: 20px;
 }
 
 footer ul{
@@ -84,12 +82,20 @@ footer ul{
     justify-content: space-around;
 }
 
+#carousel{
+    margin-bottom: 50px;
+    border:solid 2px black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(240,240,240,0.4);
+    box-shadow: 0px 8px 8px 8px #aaa;
+    border-radius: 10px;;
+}
 
 #titre{
     color: black;
-    text-align: center;
     padding-top: 3%;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .carousel-inner img {
@@ -103,22 +109,77 @@ footer ul{
     margin-bottom: 50px;
 }
 
-.article{
-    border: solid 2px black;
-    margin: 10px;
+#article{
+    margin-bottom: 50px;
+    border:solid 2px black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(240,240,240,0.4);
     box-shadow: 0px 8px 8px 8px #aaa;
+    border-radius: 10px;
 }
 
-#ornement2{
-    margin-left: 1550px;
+#article1{
+    border: solid 1px black;
+    box-shadow: 0px 8px 8px 8px #aaa;
+    border-top-right-radius:20px;
+    border-top-left-radius:20px;
+    padding-bottom: 20px;
+    background-color: white;
+    padding: 0%;
+    margin-left: 190px;
+
 }
 
-#ornement{
-    display: block;
-    position: absolute;
+#article2{
+    border: solid 1px black;
+    box-shadow: 0px 8px 8px 8px #aaa;
+    border-top-right-radius:20px;
+    border-top-left-radius:20px;
+    padding-bottom: 20px;
+    background-color: white;
+    padding: 0%;
+
 }
+
+.titrearticle{
+    border-bottom: 2px solid black;
+    border-top-right-radius:20px;
+    border-top-left-radius:20px;
+    text-align: center;
+    background-color: pink;
+}
+
+#pied{
+    padding-top: 10px;
+}
+
+/*------------------------------------------CSS Lieux------------------------------------------------------*/
+#lieux{
+margin-bottom: 50px;
+border:solid 2px black;
+padding-top: 20px;
+padding-bottom: 20px;
+background-color: rgba(240,240,240,0.4);
+box-shadow: 0px 8px 8px 8px #aaa;
+border-radius: 10px;
+}
+
 
 #iframe{
-    display: flex;
-    justify-content: center;
+    margin-left: 50px;
+}
+
+
+/*------------------------------------css inscription--------------------------------------------------------*/
+
+
+#inscription{
+    margin-bottom: 50px;
+    border:solid 2px black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(240,240,240,0.4);
+    box-shadow: 0px 8px 8px 8px #aaa;
+    border-radius: 10px;
 }

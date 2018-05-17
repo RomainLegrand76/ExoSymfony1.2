@@ -1,11 +1,18 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello {{ controller_name }}!{% endblock %}
+{% block title %}Hello!{% endblock %}
 
 {% block body %}
-    <main>
-        <div id="iframe">
+<main class="col-lg-9">
+    <div id="lieux" class="row">
+        <div id="iframe" class="col-lg-6">
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d681902.5508428504!2d1.0823214001320671!3d49.56281552743131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssalle+des+fetes!5e0!3m2!1sfr!2sfr!4v1526460319628" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-    </main>
+        <div class="offset-lg-1">
+            {{ form_start(formulaire) }}
+            {{ form_widget(formulaire) }}
+            {{ form_end(formulaire) }}
+        </div>
+    </div>
+</main>
 {% endblock %}
