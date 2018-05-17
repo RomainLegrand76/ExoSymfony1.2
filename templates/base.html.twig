@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Welcome!{% endblock %}</title>
-    {% block stylesheets %}<link rel="stylesheet" href="{{ asset("build/app.css") }}">{% endblock %}
+   {% block stylesheets %}<link rel="stylesheet" href="{{ asset("build/app.css") }}">{% endblock %}
 
 </head>
 <div id="corp" class="container-fluid">
@@ -19,6 +19,7 @@
                 <li><a href="/formules"><img src="images/icone/formules.png"> Formules</a></li>
                 <li><a href="/entreprise"><img src="images/icone/entreprise.png">  Entreprises</a></li>
                 <li><a href="/photos"><img src="images/icone/photos.png">  Photos</a></li>
+                <li><a href="/connect"><img src="images/icone/photos.png">  Connection</a></li>
             </ul>
         </nav>
     </header>
@@ -43,6 +44,9 @@
             </ul>
         </div>
     </footer>
+
+
+    {% block bodyconnect %}{% endblock %}
 </div>
 </html>
 
