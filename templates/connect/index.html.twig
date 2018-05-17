@@ -4,8 +4,14 @@
 
 {% block body %}
 
-    {{ form_start(formulaire) }}
-    {{ form_widget(formulaire) }}
-    {{ form_end(formulaire) }}
+    <main class="col-lg-9">
+        <div id="connect" class="row">
 
+            <div class="offset-lg-5">
+                {{ form_start(formulaire) }}
+                {{ form_widget(formulaire) }}
+                {{ form_end(formulaire) }}
+            </div>
+        </div>
+    </main>
 {% endblock %}
