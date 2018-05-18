@@ -16,7 +16,6 @@ class ContactController extends Controller
      * @Route("/contact", name="contact")
      */
 
-
     public function formulaire(Request $requete)
     {
         $inscription = new Contact();
