@@ -7,7 +7,6 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use App\Entity\Contact;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
@@ -16,6 +15,8 @@ class ContactController extends Controller
     /**
      * @Route("/contact", name="contact")
      */
+
+
     public function formulaire(Request $requete)
     {
         $inscription = new Contact();
@@ -33,7 +34,7 @@ class ContactController extends Controller
         {
             $inscription = $formulaire->getData();
 
-            return $this->redirectToRoute(contact_formok);
+            return $this->redirectToRoute('contact_formok');
         }
 
         return $this->render('/contact/index.html.twig',
@@ -41,7 +42,7 @@ class ContactController extends Controller
     }
 
     /**
-     * @Route("/contact/formok",name="inscription_formok")
+     * @Route("/contact/formok",name="contact_formok")
      */
 
     public function formulaireOK(){
