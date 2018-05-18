@@ -42,11 +42,6 @@ class InscriptionController extends Controller
     }
 
     /**
-     * @Route("/inscription/formulaire", name="inscription_formulaire")
-     */
-
-
-    /**
      * @Route("/inscription/formok", name="inscription_formok")
      */
 
