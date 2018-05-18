@@ -27,11 +27,15 @@ class ConnectController extends Controller
             ->add('password', TextType::class)
             ->add('envoyer', SubmitType::class, array('label'=>'Connect'))
             ->getForm();
-        $requete->isMethod('POST');
+
         $formulaire->handleRequest($requete);
 
         if($formulaire->isSubmitted() && $formulaire->isValid()){
             $users = $formulaire->getData();
+
+            $envoiebdd = $this->getDoctrine()->getManager();
+            $envoiebdd->persist($users);
+            $envoiebdd->flush();
 
             return $this->redirectToRoute('connect_formok');
         }
